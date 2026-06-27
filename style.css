@@ -1,0 +1,195 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+background:#f6f7fb;
+color:#222;
+line-height:1.6;
+}
+
+/* HEADER */
+header{
+background:#0f172a;
+color:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h1{
+font-size:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#f59e0b;
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://cdn.pixabay.com/photo/2016/11/29/03/53/engine-1867615_1280.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h2{
+font-size:42px;
+max-width:900px;
+margin:auto;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+opacity:0.9;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 28px;
+background:#f59e0b;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#d97706;
+}
+
+/* TRUST BAR */
+.trust{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:20px;
+background:white;
+font-weight:bold;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* SECTIONS */
+section{
+padding:70px 8%;
+text-align:center;
+}
+
+h2{
+margin-bottom:30px;
+color:#0f172a;
+font-size:32px;
+}
+
+/* ABOUT BOX */
+.about{
+max-width:900px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+font-size:17px;
+}
+
+/* SERVICES GRID */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+margin-top:10px;
+}
+
+/* CONTACT SECTION */
+.contact{
+background:#111827;
+color:white;
+padding:70px 20px;
+}
+
+.contact a{
+display:block;
+margin:10px 0;
+font-weight:bold;
+color:white;
+text-decoration:none;
+}
+
+.contact a:hover{
+color:#f59e0b;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+.hero h2{
+font-size:28px;
+}
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+}
+/* HERO - Uses an internet link */
+.hero{
+background:linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)),
+url("Screenshot 2026-06-27 11.43.46.jpg"); 
+background-size:cover;
+background-position:center;
+}
